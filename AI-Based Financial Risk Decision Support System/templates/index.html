@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+
+<h2>Financial Risk Prediction</h2>
+
+<form action="/predict" method="POST">
+
+<label>Income</label>
+<input type="number" name="income" required>
+
+<label>Debt</label>
+<input type="number" name="debt" required>
+
+<label>Credit Score</label>
+<input type="number" name="credit" required>
+
+<button type="submit">Predict Risk</button>
+
+</form>
+
+</div>
+
+{% endblock %}

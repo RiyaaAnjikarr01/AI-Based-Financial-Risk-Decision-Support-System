@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Scenario Simulation</h2>
+
+<table>
+
+<tr>
+
+<th>Scenario</th>
+<th>Income</th>
+<th>Debt</th>
+
+</tr>
+
+{% for s in scenarios %}
+
+<tr>
+
+<td>{{s.title}}</td>
+<td>{{s.income}}</td>
+<td>{{s.debt}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

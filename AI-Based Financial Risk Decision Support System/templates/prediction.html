@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="result-card">
+
+<h2>Risk Prediction Result</h2>
+
+<div class="risk-box">
+
+<h3>{{risk}}</h3>
+
+</div>
+
+<div class="details">
+
+<p><strong>Income:</strong> {{income}}</p>
+<p><strong>Debt:</strong> {{debt}}</p>
+<p><strong>Credit Score:</strong> {{credit}}</p>
+
+</div>
+
+<form action="/simulation" method="POST">
+
+<input type="hidden" name="income" value="{{income}}">
+<input type="hidden" name="debt" value="{{debt}}">
+
+<button type="submit">Run Scenario Simulation</button>
+
+</form>
+
+</div>
+
+{% endblock %}

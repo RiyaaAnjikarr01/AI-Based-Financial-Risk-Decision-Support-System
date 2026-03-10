@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Financial Data Analytics</h2>
+
+<div class="analytics-container">
+
+<div class="analytics-box">
+
+<h3>Income Distribution</h3>
+<canvas id="incomeChart"></canvas>
+
+</div>
+
+<div class="analytics-box">
+
+<h3>Debt Distribution</h3>
+<canvas id="debtChart"></canvas>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/main.js"></script>
+
+{% endblock %}
